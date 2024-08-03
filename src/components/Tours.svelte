@@ -1,9 +1,13 @@
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <section class="tours" id="tours">
 	<div class="wrapper-full">
 		<div class="tours__tour tour">
 			<div class="tour__pic">
 				<img
-					src="/tour-1-min.jpg"
+					src="{base}/tour-1-min.jpg"
 					alt="Prefecture in Focus: Tottori"
 					class="tour__thumb"
 					loading="lazy"
@@ -16,7 +20,7 @@
 					sand dunes, captivating landscapes, and a rich cultural heritage. Experience the essence
 					of Japan in this picturesque region.
 				</p>
-				<a href="/" class="tour__more">VIEW PREFECTURE</a>
+				<a href="{base}/" class="tour__more">VIEW PREFECTURE</a>
 			</div>
 		</div>
 		<div class="tours__tour tour">
@@ -27,11 +31,11 @@
 					groves, traditional temples, and scenic beauty. Immerse yourself in the tranquility and
 					charm of this iconic neighborhood.
 				</p>
-				<a href="/" class="tour__more">VIEW NEIGHBORHOOD</a>
+				<a href="{base}/" class="tour__more">VIEW NEIGHBORHOOD</a>
 			</div>
 			<div class="tour__pic tour__pic_mob-first">
 				<img
-					src="/tour-2-min.jpg"
+					src="{base}/tour-2-min.jpg"
 					alt="Featured Neighborhood: Kyoto’s Arashiyama"
 					class="tour__thumb"
 					loading="lazy"

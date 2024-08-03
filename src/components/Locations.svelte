@@ -1,5 +1,6 @@
 <script>
 	import Icons from './Icons.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <section class="top" id="locations">
@@ -8,7 +9,7 @@
 		<div class="top__cards">
 			<div class="top__card">
 				<div class="top__card-pic">
-					<img src="/top-1-min.jpg" alt="NAGOYA" class="top__card-thumb" loading="lazy" />
+					<img src="{base}/top-1-min.jpg" alt="NAGOYA" class="top__card-thumb" loading="lazy" />
 					<div class="top__card-stats">
 						<h3 class="top__card-title">NAGOYA</h3>
 						<button type="button" class="top__card-likes">
@@ -26,12 +27,12 @@
 					ancient castles to futuristic attractions, Nagoya offers an unforgettable experience for
 					every traveler.
 				</p>
-				<a href="/" class="top__card-more">SEE MORE</a>
+				<a href="{base}/" class="top__card-more">SEE MORE</a>
 			</div>
 
 			<div class="top__card">
 				<div class="top__card-pic">
-					<img src="/top-2-min.jpg" alt="NIIGATA" class="top__card-thumb" loading="lazy" />
+					<img src="{base}/top-2-min.jpg" alt="NIIGATA" class="top__card-thumb" loading="lazy" />
 					<div class="top__card-stats">
 						<h3 class="top__card-title">NIIGATA</h3>
 						<button type="button" class="top__card-likes">
@@ -49,11 +50,11 @@
 					countryside, taste exceptional sake, and immerse yourself in the warmth of the local
 					hospitality.
 				</p>
-				<a href="/" class="top__card-more">SEE MORE</a>
+				<a href="{base}/" class="top__card-more">SEE MORE</a>
 			</div>
 			<div class="top__card">
 				<div class="top__card-pic">
-					<img src="/top-3-min.jpg" alt="OSAKA" class="top__card-thumb" loading="lazy" />
+					<img src="{base}/top-3-min.jpg" alt="OSAKA" class="top__card-thumb" loading="lazy" />
 					<div class="top__card-stats">
 						<h3 class="top__card-title">OSAKA</h3>
 						<button type="button" class="top__card-likes">
@@ -71,12 +72,12 @@
 					landmarks, and modern entertainment. Unravel the multifaceted charm of Japan's kitchen and
 					entertainment capital.
 				</p>
-				<a href="/" class="top__card-more">SEE MORE</a>
+				<a href="{base}/" class="top__card-more">SEE MORE</a>
 			</div>
 
 			<div class="top__card">
 				<div class="top__card-pic">
-					<img src="/top-4-min.jpg" alt="SAITAMA" class="top__card-thumb" loading="lazy" />
+					<img src="{base}/top-4-min.jpg" alt="SAITAMA" class="top__card-thumb" loading="lazy" />
 					<div class="top__card-stats">
 						<h3 class="top__card-title">SAITAMA</h3>
 						<button type="button" class="top__card-likes">
@@ -94,11 +95,11 @@
 					parks, and cultural treasures. Discover the perfect blend of nature and urban charm in
 					this fascinating region.
 				</p>
-				<a href="/" class="top__card-more">SEE MORE</a>
+				<a href="{base}/" class="top__card-more">SEE MORE</a>
 			</div>
 			<div class="top__card">
 				<div class="top__card-pic">
-					<img src="/top-5-min.jpg" alt="UENO" class="top__card-thumb" loading="lazy" />
+					<img src="{base}/top-5-min.jpg" alt="UENO" class="top__card-thumb" loading="lazy" />
 					<div class="top__card-stats">
 						<h3 class="top__card-title">UENO</h3>
 						<button type="button" class="top__card-likes">
@@ -116,12 +117,12 @@
 					museums, cherry blossoms, and vibrant atmosphere. Discover the rich history and
 					contemporary allure of this captivating neighborhood.
 				</p>
-				<a href="/" class="top__card-more">SEE MORE</a>
+				<a href="{base}/" class="top__card-more">SEE MORE</a>
 			</div>
 
 			<div class="top__card">
 				<div class="top__card-pic">
-					<img src="/top-6-min.jpg" alt="SHIBUYA" class="top__card-thumb" loading="lazy" />
+					<img src="{base}/top-6-min.jpg" alt="SHIBUYA" class="top__card-thumb" loading="lazy" />
 					<div class="top__card-stats">
 						<h3 class="top__card-title">SHIBUYA</h3>
 						<button type="button" class="top__card-likes">
@@ -139,7 +140,7 @@
 					entertainment hub. Explore trendy shops, indulge in delectable cuisine, and experience the
 					vibrant street culture of this bustling district.
 				</p>
-				<a href="/" class="top__card-more">SEE MORE</a>
+				<a href="{base}/" class="top__card-more">SEE MORE</a>
 			</div>
 		</div>
 	</div>

@@ -1,11 +1,12 @@
 <script>
 	import Icons from './Icons.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <footer class="footer">
 	<div class="wrapper">
 		<div class="footer__logo">
-			<a href="/" class="footer__logo">
+			<a href="{base}/" class="footer__logo">
 				<Icons type="logoFooter"></Icons>
 			</a>
 		</div>
@@ -15,22 +16,22 @@
 					<h3 class="footer__list-title">Company</h3>
 				</li>
 				<li class="footer__item">
-					<a href="/sign-in" class="footer__link">Home</a>
+					<a href="{base}/sign-in" class="footer__link">Home</a>
 				</li>
 				<li class="footer__item">
-					<a href="/#tours" class="footer__link">Articles</a>
+					<a href="{base}/#tours" class="footer__link">Articles</a>
 				</li>
 				<li class="footer__item">
-					<a href="/#locations" class="footer__link">Locations</a>
+					<a href="{base}/#locations" class="footer__link">Locations</a>
 				</li>
 				<li class="footer__item">
-					<a href="/#videos" class="footer__link">Videos</a>
+					<a href="{base}/#videos" class="footer__link">Videos</a>
 				</li>
 				<li class="footer__item">
-					<a href="/" class="footer__link">About</a>
+					<a href="{base}/" class="footer__link">About</a>
 				</li>
 				<li class="footer__item">
-					<a href="/" class="footer__link">Contact</a>
+					<a href="{base}/" class="footer__link">Contact</a>
 				</li>
 			</ul>
 
@@ -39,16 +40,16 @@
 					<h3 class="footer__list-title">Location</h3>
 				</li>
 				<li class="footer__item">
-					<a href="/" class="footer__link">Tokyo</a>
+					<a href="{base}/" class="footer__link">Tokyo</a>
 				</li>
 				<li class="footer__item">
-					<a href="/" class="footer__link">Kyoto</a>
+					<a href="{base}/" class="footer__link">Kyoto</a>
 				</li>
 				<li class="footer__item">
-					<a href="/" class="footer__link">Osaka</a>
+					<a href="{base}/" class="footer__link">Osaka</a>
 				</li>
 				<li class="footer__item">
-					<a href="/" class="footer__link">Hokkaido</a>
+					<a href="{base}/" class="footer__link">Hokkaido</a>
 				</li>
 			</ul>
 
@@ -57,16 +58,16 @@
 					<h3 class="footer__list-title">Social Media</h3>
 				</li>
 				<li class="footer__item">
-					<a href="/" class="footer__link">Facebook</a>
+					<a href="{base}/" class="footer__link">Facebook</a>
 				</li>
 				<li class="footer__item">
-					<a href="/" class="footer__link">Twitter</a>
+					<a href="{base}/" class="footer__link">Twitter</a>
 				</li>
 				<li class="footer__item">
-					<a href="/" class="footer__link">Instagram</a>
+					<a href="{base}/" class="footer__link">Instagram</a>
 				</li>
 				<li class="footer__item">
-					<a href="/" class="footer__link">Youtube</a>
+					<a href="{base}/" class="footer__link">Youtube</a>
 				</li>
 			</ul>
 		</nav>
@@ -80,8 +81,6 @@
 		@media screen and (max-width: 960px) {
 			padding: 60px 0;
 		}
-
-
 
 		&__link {
 			font-weight: normal;

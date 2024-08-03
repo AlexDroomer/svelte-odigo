@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 </script>
 
 <section class="benefits">
@@ -10,7 +11,7 @@
 					<img
 						width="40"
 						height="40"
-						src="/church-icon.png"
+						src="{base}/church-icon.png"
 						alt="Welcome to Odigo!"
 						class="benefits__card-thumb"
 						loading="lazy"
@@ -22,12 +23,12 @@
 					have access to a vast collection of travel information, itineraries, and insider tips to
 					make your journey unforgettable.
 				</p>
-				<a href="/" class="benefits__card-more">Learn more about Odigo</a>
+				<a href="{base}/" class="benefits__card-more">Learn more about Odigo</a>
 			</div>
 			<div class="benefits__card">
 				<div class="benefits__card-pic">
 					<img
-						src="/person-icon.png"
+						src="{base}/person-icon.png"
 						width="40"
 						height="40"
 						alt="Your Personal Japan Guide"
@@ -42,12 +43,12 @@
 					gems, find the best local spots, and immerse yourself in the authentic culture of this
 					enchanting country.
 				</p>
-				<a href="/" class="benefits__card-more">Read guide about Japan</a>
+				<a href="{base}/" class="benefits__card-more">Read guide about Japan</a>
 			</div>
 			<div class="benefits__card">
 				<div class="benefits__card-pic">
 					<img
-						src="/building-icon.png"
+						src="{base}/building-icon.png"
 						width="40"
 						height="40"
 						alt="Promoting Local Businesses"
@@ -61,7 +62,7 @@
 					experiences, support local artisans, and contribute to the sustainable growth of Japan's
 					vibrant towns and cities.
 				</p>
-				<a href="/" class="benefits__card-more">See Businesses</a>
+				<a href="{base}/" class="benefits__card-more">See Businesses</a>
 			</div>
 		</div>
 	</div>

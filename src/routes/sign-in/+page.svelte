@@ -1,9 +1,45 @@
 <script>
-	/** @type {import('./$types').PageData} */
-	export let data;
+	import { onMount } from 'svelte';
+	import { nanoid } from 'nanoid';
+	import { writable } from 'svelte/store';
+	let user = writable(null);
+	/** @param {SubmitEvent & { currentTarget: EventTarget & HTMLFormElement; }}  event */
+	const signIn = async (event) => {
+		event.preventDefault();
 
-	/** @type {import('./$types').ActionData} */
-	export let form;
+		const formData = new FormData(event.currentTarget);
+		const email = formData.get('email')?.toString();
+		const password = formData.get('password')?.toString();
+
+		if (email && password) {
+			const sessionId = nanoid();
+
+			document.cookie = `sessionid=${sessionId}; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax;`;
+			document.cookie = `user=${email}; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax;`;
+
+			// @ts-ignore
+			user.set(email);
+			// Mocking a success response
+			console.log({ success: true });
+		}
+	};
+
+	const signOut = () => {
+		document.cookie = 'sessionid=; path=/; max-age=0;';
+		document.cookie = 'user=; path=/; max-age=0;';
+		user.set(null);
+	};
+
+	onMount(() => {
+		const userCookie = document.cookie
+			.split('; ')
+			.find((row) => row.startsWith('user='))
+			?.split('=')[1];
+		if (userCookie) {
+			// @ts-ignore
+			user.set(userCookie);
+		}
+	});
 </script>
 
 <svelte:head>
@@ -12,15 +48,15 @@
 </svelte:head>
 <div class="sign-in" style="">
 	<div class="sign-in__wrapper">
-		{#if form?.success || data.user}
-			<form method="POST" action="?/signOut" class="sign-in__form">
+		{#if $user}
+			<form method="POST" on:submit={signOut} class="sign-in__form">
 				<h1 style="text-align: center; color: white;">Successfully logged in!</h1>
-				<p style="text-align: center; color: white;">Welcome back, {data.user}</p>
+				<p style="text-align: center; color: white;">Welcome back, {$user}</p>
 				<button type="submit" class="sign-in__submit">Sign Out</button>
 			</form>
 		{:else}
 			<h1 class="sign-in__title">Sign In</h1>
-			<form method="POST" action="?/signIn" class="sign-in__form">
+			<form method="POST" on:submit={signIn} class="sign-in__form">
 				<label class="sign-in__label" for="email">Email</label>
 				<input
 					required

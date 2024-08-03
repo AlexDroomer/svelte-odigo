@@ -221,7 +221,7 @@
 			white-space: normal;
 			background-color: white;
 			z-index: 30;
-			color: hsl(var(--color-theme-black));;
+			color: hsl(var(--color-theme-black));
 		}
 	}
 	.videos {
@@ -239,7 +239,7 @@
 		width: 100%;
 		height: 0;
 		padding-bottom: 56.25%;
-		background-color: hsl(var(--color-theme-black));;
+		background-color: hsl(var(--color-theme-black));
 
 		&_controls {
 			display: contents;
@@ -264,7 +264,7 @@
 					background-color: transparent;
 
 					&:hover {
-						background-color: hsl(var(--color-theme-blue));;
+						background-color: hsl(var(--color-theme-blue));
 					}
 				}
 			}
@@ -290,7 +290,7 @@
 
 		&:hover .video__button-shape,
 		.video__button:focus .video__button-shape {
-			fill: hsl(var(--color-theme-blue));;
+			fill: hsl(var(--color-theme-blue));
 			fill-opacity: 1;
 		}
 
@@ -334,7 +334,7 @@
 			}
 
 			&-icon {
-				fill: hsl(var(--color-theme-white));;
+				fill: hsl(var(--color-theme-white));
 			}
 		}
 	}

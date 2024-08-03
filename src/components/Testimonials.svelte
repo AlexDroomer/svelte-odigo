@@ -1,6 +1,6 @@
 <script>
-
 </script>
+
 <section class="testimonials">
 	<div class="wrapper">
 		<h2 class="testimonials__title section__title">What our travelers say</h2>
@@ -50,7 +50,6 @@
 			background-color: hsl(var(--color-theme-white));
 			border-radius: 8px;
 			box-shadow: 0 2px 6px hsl(var(--color-theme-blue) / 0.16);
-
 
 			&__quote {
 				font-size: 1rem;

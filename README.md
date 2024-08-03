@@ -1,4 +1,5 @@
 # Odigo
+
 Odigo is my pet project that I created to learn Svelte and SvelteKit.
 
 ## Developing

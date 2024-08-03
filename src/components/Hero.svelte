@@ -184,7 +184,7 @@
 			background: transparent no-repeat left 18px;
 			background-size: 20px;
 			border: 0;
-			border-bottom: 2px solid hsl(var(--color-theme-blue));;
+			border-bottom: 2px solid hsl(var(--color-theme-blue));
 			margin-right: 60px;
 			padding-left: 43px;
 			font-weight: 500;
@@ -211,7 +211,7 @@
 			&::placeholder {
 				font-weight: 500;
 				font-size: 1.125rem;
-				color: hsl(var(--color-theme-white)/0.5);
+				color: hsl(var(--color-theme-white) / 0.5);
 				@media screen and (max-width: 767px) {
 					font-size: 1rem;
 				}

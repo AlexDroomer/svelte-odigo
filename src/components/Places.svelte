@@ -1,65 +1,69 @@
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <section class="places">
 	<div class="wrapper-full">
 		<div class="places__caption">
 			<h2 class="places__title section__title">Get inspired for your next trip</h2>
-			<a href="/" aria-label="View all places" class="places__view-all">VIEW ALL</a>
+			<a href="{base}/" aria-label="View all places" class="places__view-all">VIEW ALL</a>
 		</div>
 		<div class="places__cards">
 			<figure class="places__card places__card_size_lg">
 				<figcaption class="places__card-title">Mount Fuji</figcaption>
 				<img
-					src="/mount-fuji-min.jpg"
+					src="{base}/mount-fuji-min.jpg"
 					alt="Mount Fuji"
 					class="places__card-pic places__card-pic_size_lg"
 					loading="lazy"
 				/>
-				<a href="/" aria-label="Mount Fuji" class="places__card-link"></a>
+				<a href="{base}/" aria-label="Mount Fuji" class="places__card-link"></a>
 			</figure>
 
 			<figure class="places__card places__card_size_lg">
 				<figcaption class="places__card-title">Kyoto</figcaption>
 
 				<img
-					src="/kyoto-min.jpg"
+					src="{base}/kyoto-min.jpg"
 					alt="Kyoto"
 					class="places__card-pic places__card-pic_size_lg"
 					loading="lazy"
 				/>
-				<a href="/" aria-label="Kyoto" class="places__card-link"></a>
+				<a href="{base}/" aria-label="Kyoto" class="places__card-link"></a>
 			</figure>
 
 			<figure class="places__card places__card_size_sm">
 				<figcaption class="places__card-title">Tokyo</figcaption>
 				<img
-					src="/tokyo-min.jpg"
+					src="{base}/tokyo-min.jpg"
 					alt="Tokyo"
 					class="places__card-pic places__card-pic_size_sm"
 					loading="lazy"
 				/>
-				<a href="/" aria-label="Tokyo" class="places__card-link"></a>
+				<a href="{base}/" aria-label="Tokyo" class="places__card-link"></a>
 			</figure>
 
 			<figure class="places__card places__card_size_sm">
 				<figcaption class="places__card-title">Niigata</figcaption>
 
 				<img
-					src="/niigata-min.jpg"
+					src="{base}/niigata-min.jpg"
 					alt="Niigata"
 					class="places__card-pic places__card-pic_size_sm"
 					loading="lazy"
 				/>
-				<a href="/" aria-label="Niigata" class="places__card-link"></a>
+				<a href="{base}/" aria-label="Niigata" class="places__card-link"></a>
 			</figure>
 
 			<figure class="places__card places__card_size_sm">
 				<figcaption class="places__card-title">Sapporo</figcaption>
 				<img
-					src="/sapporo-min.jpg"
+					src="{base}/sapporo-min.jpg"
 					alt="Sapporo"
 					class="places__card-pic places__card-pic_size_sm"
 					loading="lazy"
 				/>
-				<a href="/" aria-label="Sapporo" class="places__card-link"></a>
+				<a href="{base}/" aria-label="Sapporo" class="places__card-link"></a>
 			</figure>
 		</div>
 	</div>
@@ -107,7 +111,7 @@
 			overflow: hidden;
 			margin: 0;
 
-			&:hover .places__card-pic{
+			&:hover .places__card-pic {
 				transform: scale(1);
 			}
 
