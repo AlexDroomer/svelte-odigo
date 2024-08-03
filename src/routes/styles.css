@@ -1,0 +1,175 @@
+:root {
+	--font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+		'Open Sans', 'Helvetica Neue', sans-serif;
+	--font-mono: monospace;
+	--color-bg-black: 0 0% 0%;
+	--color-bg-white: 0 0% 100%;
+	--color-theme-blue: 214 100% 50%;
+	--color-theme-darkblue: 214 63% 17%;
+	--color-theme-white: 0 0% 100%;
+	--color-theme-black: 0 0% 0%;
+	--color-text: 214 63% 17%;
+}
+
+body {
+	margin: 0;
+	font-family: var(--font-body);
+	color: hsl(var(--color-text));
+	font-smooth: antialiased;
+}
+
+h1,
+h2,
+p {
+	font-weight: 400;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+.text-column {
+	display: flex;
+	max-width: 48rem;
+	flex: 0.6;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+@media (min-width: 720px) {
+	h1 {
+		font-size: 2.4rem;
+	}
+}
+
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+}
+
+.wrapper {
+	max-width: 1060px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.wrapper-full {
+	max-width: 1262px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.section__title {
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 42px;
+	position: relative;
+	padding-bottom: 7px;
+}
+.section__title::after {
+	display: block;
+	content: '';
+	width: 253px;
+	height: 3px;
+	background-color: hsl(var(--color-theme-blue));
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	@media screen and (max-width: 767px) {
+		width: 78px;
+		margin-bottom: 0px;
+		bottom: 0px;
+	}
+}
+
+@keyframes fadeInLeft {
+	from {
+		opacity: 0;
+		transform: translate3d(-100%, 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeOutLeft {
+	0% {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+.fadeInLeft {
+	animation-name: fadeInLeft;
+}
+.video__media {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+.not-sr-only {
+	position: static;
+	width: auto;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+	clip: auto;
+	white-space: normal;
+}
