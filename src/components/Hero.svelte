@@ -1,4 +1,6 @@
 <script>
+	import { base } from "$app/paths";
+
 	let userAction = '';
 	let userPlace = '';
 
@@ -44,7 +46,7 @@
 			<fieldset class="search-form__wrap">
 				<div class="search-form__info">
 					<input
-						style="background-image: url(/circle-icon.svg);"
+						style="background-image: url({base}/circle-icon.svg);"
 						type="text"
 						name="user-like-to-do"
 						bind:value={userAction}
@@ -52,7 +54,7 @@
 						placeholder="What would you like to do?"
 					/>
 					<input
-						style="background-image: url(/circle-icon.svg);"
+						style="background-image: url({base}/circle-icon.svg);"
 						type="text"
 						name="user-like-to-go"
 						bind:value={userPlace}
@@ -205,7 +207,7 @@
 				margin-right: 0;
 				width: 100%;
 				padding-bottom: 12px;
-				background: transparent url(/circle-icon.svg) no-repeat left 18px;
+				background: transparent url({base}/circle-icon.svg) no-repeat left 18px;
 			}
 
 			&::placeholder {
