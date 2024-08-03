@@ -11,11 +11,16 @@
 	--color-text: 214 63% 17%;
 }
 
+*, :after, :before {
+    box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	font-family: var(--font-body);
 	color: hsl(var(--color-text));
-	font-smooth: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -43,6 +48,11 @@ h1 {
 
 h2 {
 	font-size: 1rem;
+}
+
+img {
+	width: 100%;
+	height: auto;
 }
 
 .text-column {
@@ -96,8 +106,8 @@ button:focus:not(:focus-visible) {
 
 .section__title {
 	font-weight: 500;
-	font-size: 35px;
-	line-height: 42px;
+	font-size: 2rem;
+	line-height: 2.5rem;
 	position: relative;
 	padding-bottom: 7px;
 }

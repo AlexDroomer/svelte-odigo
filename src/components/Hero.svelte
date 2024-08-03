@@ -30,7 +30,6 @@
 "
 >
 	<div class="wrapper">
-		<div class="image"></div>
 		<h1 class="hero__title">Discover Amazing places in Japan</h1>
 		<p class="hero__subtitle">
 			Welcome to the beautiful land of Japan, a country known for its stunning natural landscapes,
@@ -90,41 +89,41 @@
 	.hero {
 		min-height: 65vh;
 		background-size: cover;
-		padding-top: 263px;
-		padding-bottom: 223px;
+		padding-top: 264px;
+		padding-bottom: 248px;
 		@media screen and (max-width: 767px) {
-			padding-top: 125px;
+			padding-top: 124px;
 		}
 
 		&__title {
 			text-align: left;
-			font-size: 50px;
-			line-height: 60px;
+			font-size: 3rem;
+			line-height: 3.5rem;
 			font-weight: 500;
-			color: white;
+			color: hsl(var(--color-theme-white));
 			max-width: 560px;
-			margin-bottom: 22px;
+			margin-bottom: 24px;
 			@media screen and (max-width: 767px) {
-				font-size: 32px;
-				line-height: 48px;
+				font-size: 2rem;
+				line-height: 2.5rem;
 			}
 		}
 		&__subtitle {
 			color: white;
-			font-size: 16px;
-			line-height: 24px;
+			font-size: 1rem;
+			line-height: 1.5rem;
 			max-width: 540px;
 			margin-bottom: 59px;
 			@media screen and (max-width: 767px) {
-				font-size: 14px;
+				font-size: 0.875rem;
 			}
 		}
 	}
 
 	dialog {
 		display: grid;
-		background: #e9ecef;
-		color: #212529;
+		background: hsl(var(--color-theme-darkblue));
+		color: hsl(var(--color-theme-white));
 		max-inline-size: min(90vw, 60ch);
 		max-block-size: min(80vh, 100%);
 		max-block-size: min(80dvb, 100%);
@@ -135,7 +134,7 @@
 		inset: 0;
 		padding: 1rem;
 		border-color: transparent;
-		border-radius: 0.25rem;
+		border-radius: 4px;
 		z-index: var(--layer-important);
 
 		&:not([open]) {
@@ -153,11 +152,11 @@
 		button {
 			padding: 14px 36px;
 			border: 0;
-			border-radius: 0.25rem;
+			border-radius: 4px;
 			font-weight: 400;
-			font-size: 24px;
-			color: #fff;
-			background: transparent;
+			font-size: 1.5rem;
+			color: hsl(var(--color-theme-darkblue));
+			background: hsl(var(--color-theme-white));
 			cursor: pointer;
 			@media screen and (max-width: 767px) {
 				width: 100%;
@@ -174,22 +173,23 @@
 		&__info {
 			display: flex;
 			flex-wrap: wrap;
+			gap: 1.5rem;
 
 			@media screen and (max-width: 767px) {
 				flex-direction: column;
 			}
 		}
 		&__field {
-			max-width: 297px;
+			flex: 1 1 auto;
 			background: transparent no-repeat left 18px;
 			background-size: 20px;
 			border: 0;
-			border-bottom: 2px solid #bfc0c5;
+			border-bottom: 2px solid hsl(var(--color-theme-blue));;
 			margin-right: 60px;
 			padding-left: 43px;
 			font-weight: 500;
-			font-size: 18px;
-			color: #fff;
+			font-size: 1.125rem;
+			color: hsl(var(--color-theme-white));
 			min-height: 52px;
 
 			&:-internal-autofill-selected {
@@ -200,9 +200,7 @@
 				outline: none;
 				border-bottom: 2px solid hsl(var(--color-theme-blue));
 			}
-			@media screen and (max-width: 960px) {
-				margin-bottom: 25px;
-			}
+
 			@media screen and (max-width: 767px) {
 				margin-right: 0;
 				width: 100%;
@@ -212,23 +210,24 @@
 
 			&::placeholder {
 				font-weight: 500;
-				font-size: 18px;
-				color: #c7c7c7;
+				font-size: 1.125rem;
+				color: hsl(var(--color-theme-white)/0.5);
 				@media screen and (max-width: 767px) {
-					font-size: 16px;
+					font-size: 1rem;
 				}
 			}
 		}
 		&__submit {
+			flex: 1 1 auto;
 			display: inline-flex;
 			justify-content: center;
 			align-items: center;
 			white-space: nowrap;
-			padding: 0.75rem 1.25rem;
+			padding: 8px 12px;
 			border-radius: 0.25rem;
 			font-weight: 600;
 			font-size: 1rem;
-			color: #fff;
+			color: hsl(var(--color-theme-white));
 			background: hsl(var(--color-theme-blue));
 			border: none;
 			cursor: pointer;
@@ -246,7 +245,7 @@
 			&:focus-visible {
 				outline: none;
 				box-shadow:
-					0 0 0 2px #fff,
+					0 0 0 2px hsl(var(--color-theme-white)),
 					0 0 0 4px hsl(var(--color-theme-black));
 			}
 			&:disabled {

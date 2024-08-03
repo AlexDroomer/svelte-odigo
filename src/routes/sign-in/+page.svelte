@@ -34,7 +34,7 @@
 				<label class="sign-in__label" for="password">Password</label>
 				<input
 					required
-					placeholder="Password"
+					placeholder="password"
 					class="sign-in__input-field"
 					autocomplete="current-password"
 					type="password"
@@ -50,18 +50,19 @@
 <style lang="scss">
 	.sign-in {
 		height: 100vh;
+		background-size: cover;
 		background-image: url(/intro-bg-min.jpg);
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		color: hsl(214, 63%, 17%);
+		color: hsl(var(--color-theme-darkblue));
 
 		&__wrapper {
 			display: flex;
 			flex-direction: column;
 			background: hsl(var(--color-theme-darkblue));
-			border-radius: 12px;
-			padding: 40px;
+			border-radius: 8px;
+			padding: 32px 40px 40px;
 			max-width: 380px;
 			width: 100%;
 		}
@@ -69,7 +70,7 @@
 		&__title {
 			font-weight: 600;
 			font-size: 2rem;
-			line-height: 42px;
+			line-height: 2.5rem;
 			color: hsl(var(--color-theme-white));
 			margin-bottom: 40px;
 			margin-top: 0;
@@ -82,7 +83,7 @@
 
 		&__label {
 			font-weight: 500;
-			line-height: 24px;
+			line-height: 1.5rem;
 			margin-bottom: 8px;
 			color: hsl(var(--color-theme-white));
 		}
@@ -92,6 +93,7 @@
 			margin-bottom: 20px;
 			border-radius: 4px;
 			font-size: 1.25rem;
+			line-height: 1.5;
 			border: 1px solid hsl(var(--color-theme-white));
 		}
 
@@ -100,7 +102,8 @@
 			color: hsl(var(--color-theme-darkblue));
 			font-weight: 600;
 			font-size: 1.25rem;
-			line-height: 24px;
+			margin-top: 16px;
+			line-height: 1.5;
 			padding: 8px 0;
 			border-radius: 4px;
 			border: 1px solid hsl(var(--color-theme-white));

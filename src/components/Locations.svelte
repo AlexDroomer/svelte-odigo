@@ -26,7 +26,7 @@
 					ancient castles to futuristic attractions, Nagoya offers an unforgettable experience for
 					every traveler.
 				</p>
-				<a href="#!" class="top__card-more">SEE MORE</a>
+				<a href="/" class="top__card-more">SEE MORE</a>
 			</div>
 
 			<div class="top__card">
@@ -49,7 +49,7 @@
 					countryside, taste exceptional sake, and immerse yourself in the warmth of the local
 					hospitality.
 				</p>
-				<a href="#!" class="top__card-more">SEE MORE</a>
+				<a href="/" class="top__card-more">SEE MORE</a>
 			</div>
 			<div class="top__card">
 				<div class="top__card-pic">
@@ -71,7 +71,7 @@
 					landmarks, and modern entertainment. Unravel the multifaceted charm of Japan's kitchen and
 					entertainment capital.
 				</p>
-				<a href="#!" class="top__card-more">SEE MORE</a>
+				<a href="/" class="top__card-more">SEE MORE</a>
 			</div>
 
 			<div class="top__card">
@@ -94,7 +94,7 @@
 					parks, and cultural treasures. Discover the perfect blend of nature and urban charm in
 					this fascinating region.
 				</p>
-				<a href="#!" class="top__card-more">SEE MORE</a>
+				<a href="/" class="top__card-more">SEE MORE</a>
 			</div>
 			<div class="top__card">
 				<div class="top__card-pic">
@@ -116,7 +116,7 @@
 					museums, cherry blossoms, and vibrant atmosphere. Discover the rich history and
 					contemporary allure of this captivating neighborhood.
 				</p>
-				<a href="#!" class="top__card-more">SEE MORE</a>
+				<a href="/" class="top__card-more">SEE MORE</a>
 			</div>
 
 			<div class="top__card">
@@ -139,7 +139,7 @@
 					entertainment hub. Explore trendy shops, indulge in delectable cuisine, and experience the
 					vibrant street culture of this bustling district.
 				</p>
-				<a href="#!" class="top__card-more">SEE MORE</a>
+				<a href="/" class="top__card-more">SEE MORE</a>
 			</div>
 		</div>
 	</div>
@@ -160,9 +160,11 @@
 			display: grid;
 			justify-content: center;
 			grid-template-columns: repeat(auto-fit, minmax(min(100%, 387px), 377px));
-			gap: 2.5rem;
+			row-gap: 2.5rem;
+			column-gap: 1.5rem;
 			@media screen and (max-width: 960px) {
-				gap: 2rem;
+				row-gap: 3rem;
+				column-gap: 1.5rem;
 			}
 		}
 		&__card {
@@ -171,9 +173,8 @@
 
 			&-pic {
 				position: relative;
-				margin-bottom: 2rem;
+				margin-bottom: 0;
 				@media screen and (max-width: 960px) {
-					margin-bottom: 1.5rem;
 					margin-right: auto;
 				}
 			}
@@ -188,14 +189,14 @@
 				left: 0;
 				width: -moz-available;
 				width: -webkit-fill-available;
-				background: rgba(21, 24, 36, 0.6);
+				background: hsl(var(--color-theme-black) / 0.6);
 				padding: 16px 24px;
 			}
 			&-title {
 				font-weight: 500;
-				font-size: 18px;
-				line-height: 24px;
-				color: #fff;
+				font-size: 1.125rem;
+				line-height: 1.5rem;
+				color: hsl(var(--color-theme-white));
 				margin: 0 auto 0 0;
 			}
 
@@ -206,7 +207,7 @@
 				font-weight: 500;
 				font-size: 1rem;
 				line-height: 1.5rem;
-				color: #fff;
+				color: hsl(var(--color-theme-white));
 				padding-right: 1.25rem;
 				background: transparent;
 				border: none;
@@ -220,28 +221,27 @@
 				font-weight: 500;
 				font-size: 1rem;
 				line-height: 1.5rem;
-				color: #fff;
+				color: hsl(var(--color-theme-white));
 				background: transparent;
 				border: none;
 				cursor: pointer;
 			}
 			&-desc {
-				font-size: 16px;
-				line-height: 24px;
-				margin-bottom: 31px;
+				font-size: 1rem;
+				line-height: 1.5rem;
+				margin-bottom: 32px;
 				@media screen and (max-width: 767px) {
-					margin-bottom: 15px;
+					margin-bottom: 16px;
 				}
 			}
 			&-more {
-				width: 118px;
-				padding: 0.75rem 1.25rem;
+				padding: 8px 12px;
 				text-decoration: none;
-				color: #fff;
+				color: hsl(var(--color-theme-white));
 				background: hsl(var(--color-theme-blue));
-				font-size: 16px;
+				font-size: 1rem;
 				margin: auto 0 0 0;
-				border-radius: 0.25rem;
+				border-radius: 4px;
 				font-weight: 600;
 				display: inline-flex;
 				justify-content: center;
@@ -257,7 +257,7 @@
 				&:focus-visible {
 					outline: none;
 					box-shadow:
-						0 0 0 2px #fff,
+						0 0 0 2px hsl(var(--color-theme-white)),
 						0 0 0 4px hsl(var(--color-theme-black));
 				}
 			}

@@ -15,22 +15,22 @@
 					<h3 class="footer__list-title">Company</h3>
 				</li>
 				<li class="footer__item">
-					<a href="#sign-in" class="footer__link">Home</a>
+					<a href="/sign-in" class="footer__link">Home</a>
 				</li>
 				<li class="footer__item">
-					<a href="#articles" class="footer__link">Articles</a>
+					<a href="/#tours" class="footer__link">Articles</a>
 				</li>
 				<li class="footer__item">
-					<a href="#locations" class="footer__link">Locations</a>
+					<a href="/#locations" class="footer__link">Locations</a>
 				</li>
 				<li class="footer__item">
-					<a href="#videos" class="footer__link">Videos</a>
+					<a href="/#videos" class="footer__link">Videos</a>
 				</li>
 				<li class="footer__item">
-					<a href="#!" class="footer__link">About</a>
+					<a href="/" class="footer__link">About</a>
 				</li>
 				<li class="footer__item">
-					<a href="#!" class="footer__link">Contact</a>
+					<a href="/" class="footer__link">Contact</a>
 				</li>
 			</ul>
 
@@ -39,16 +39,16 @@
 					<h3 class="footer__list-title">Location</h3>
 				</li>
 				<li class="footer__item">
-					<a href="!#" class="footer__link">Tokyo</a>
+					<a href="/" class="footer__link">Tokyo</a>
 				</li>
 				<li class="footer__item">
-					<a href="!#" class="footer__link">Kyoto</a>
+					<a href="/" class="footer__link">Kyoto</a>
 				</li>
 				<li class="footer__item">
-					<a href="!#" class="footer__link">Osaka</a>
+					<a href="/" class="footer__link">Osaka</a>
 				</li>
 				<li class="footer__item">
-					<a href="!#" class="footer__link">Hokkaido</a>
+					<a href="/" class="footer__link">Hokkaido</a>
 				</li>
 			</ul>
 
@@ -57,16 +57,16 @@
 					<h3 class="footer__list-title">Social Media</h3>
 				</li>
 				<li class="footer__item">
-					<a href="!#" class="footer__link">Facebook</a>
+					<a href="/" class="footer__link">Facebook</a>
 				</li>
 				<li class="footer__item">
-					<a href="!#" class="footer__link">Twitter</a>
+					<a href="/" class="footer__link">Twitter</a>
 				</li>
 				<li class="footer__item">
-					<a href="!#" class="footer__link">Instagram</a>
+					<a href="/" class="footer__link">Instagram</a>
 				</li>
 				<li class="footer__item">
-					<a href="!#" class="footer__link">Youtube</a>
+					<a href="/" class="footer__link">Youtube</a>
 				</li>
 			</ul>
 		</nav>
@@ -86,9 +86,9 @@
 		&__link {
 			font-weight: normal;
 			padding: 8px 12px;
-			font-size: 16px;
-			line-height: 24px;
-			color: #fff;
+			font-size: 1rem;
+			line-height: 1.5rem;
+			color: hsl(var(--color-theme-white));
 			&:hover,
 			&:focus,
 			&:active {
@@ -125,9 +125,9 @@
 			}
 			&-title {
 				font-weight: 500;
-				font-size: 18px;
-				color: #fff;
-				line-height: 24px;
+				font-size: 1.125rem;
+				color: hsl(var(--color-theme-white));
+				line-height: 1.5rem;
 				padding: 8px 12px;
 			}
 		}

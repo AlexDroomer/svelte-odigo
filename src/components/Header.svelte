@@ -200,12 +200,12 @@
 		}
 
 		&__link {
-			font-size: 18px;
-			line-height: 24px;
+			font-size: 1.125rem;
+			line-height: 1.5rem;
 			color: white;
 			@media screen and (max-width: 767px) {
-				font-size: 42px;
-				line-height: 48px;
+				font-size: 2.625rem;
+				line-height: 3rem;
 			}
 
 			&:hover,

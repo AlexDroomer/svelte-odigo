@@ -1,4 +1,4 @@
-import { randomUUID } from 'crypto';
+import { nanoid } from 'nanoid';
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ cookies }) {
@@ -12,7 +12,7 @@ export const actions = {
 		const email = formData.get('email')?.toString();
 		const password = formData.get('password')?.toString();
 		if (email && password) {
-			const sessionId = randomUUID();
+			const sessionId = nanoid();
 			// const hashedPass = hash('sha1', password);
             /** This is mock for signIn */
 			cookies.set('sessionid', sessionId, {

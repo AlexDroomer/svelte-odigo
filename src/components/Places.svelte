@@ -2,7 +2,7 @@
 	<div class="wrapper-full">
 		<div class="places__caption">
 			<h2 class="places__title section__title">Get inspired for your next trip</h2>
-			<a href="#!" aria-label="View all places" class="places__view-all">VIEW ALL</a>
+			<a href="/" aria-label="View all places" class="places__view-all">VIEW ALL</a>
 		</div>
 		<div class="places__cards">
 			<figure class="places__card places__card_size_lg">
@@ -13,7 +13,7 @@
 					class="places__card-pic places__card-pic_size_lg"
 					loading="lazy"
 				/>
-				<a href="/mount-fuji" aria-label="Mount Fuji" class="places__card-link"></a>
+				<a href="/" aria-label="Mount Fuji" class="places__card-link"></a>
 			</figure>
 
 			<figure class="places__card places__card_size_lg">
@@ -25,7 +25,7 @@
 					class="places__card-pic places__card-pic_size_lg"
 					loading="lazy"
 				/>
-				<a href="/kyoto" aria-label="Kyoto" class="places__card-link"></a>
+				<a href="/" aria-label="Kyoto" class="places__card-link"></a>
 			</figure>
 
 			<figure class="places__card places__card_size_sm">
@@ -36,7 +36,7 @@
 					class="places__card-pic places__card-pic_size_sm"
 					loading="lazy"
 				/>
-				<a href="/tokyo" aria-label="Tokyo" class="places__card-link"></a>
+				<a href="/" aria-label="Tokyo" class="places__card-link"></a>
 			</figure>
 
 			<figure class="places__card places__card_size_sm">
@@ -48,7 +48,7 @@
 					class="places__card-pic places__card-pic_size_sm"
 					loading="lazy"
 				/>
-				<a href="/niigata" aria-label="Niigata" class="places__card-link"></a>
+				<a href="/" aria-label="Niigata" class="places__card-link"></a>
 			</figure>
 
 			<figure class="places__card places__card_size_sm">
@@ -59,7 +59,7 @@
 					class="places__card-pic places__card-pic_size_sm"
 					loading="lazy"
 				/>
-				<a href="/sapporo" aria-label="Sapporo" class="places__card-link"></a>
+				<a href="/" aria-label="Sapporo" class="places__card-link"></a>
 			</figure>
 		</div>
 	</div>
@@ -84,7 +84,7 @@
 		}
 
 		&__view-all {
-			font-size: 16px;
+			font-size: 1rem;
 			color: hsl(var(--color-theme-blue));
 			text-decoration: none;
 			padding-right: 59px;
@@ -112,9 +112,9 @@
 			}
 
 			&-title {
-				font-size: 50px;
-				line-height: 60px;
-				color: white;
+				font-size: 3rem;
+				line-height: 3.5rem;
+				color: hsl(var(--color-theme-white));
 				position: absolute;
 				bottom: 27px;
 				left: 29px;
@@ -146,11 +146,16 @@
 				&_size_lg {
 					height: 354px;
 					object-fit: cover;
+					object-position: bottom;
+					@media screen and (max-width: 767px) {
+						height: 283px;
+					}
 				}
 
 				&_size_sm {
 					height: 283px;
 					object-fit: cover;
+					object-position: bottom;
 				}
 			}
 			&-link {

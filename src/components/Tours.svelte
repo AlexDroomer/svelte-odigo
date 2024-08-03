@@ -16,7 +16,7 @@
 					sand dunes, captivating landscapes, and a rich cultural heritage. Experience the essence
 					of Japan in this picturesque region.
 				</p>
-				<a href="#!" class="tour__more">VIEW PREFECTURE</a>
+				<a href="/" class="tour__more">VIEW PREFECTURE</a>
 			</div>
 		</div>
 		<div class="tours__tour tour">
@@ -27,7 +27,7 @@
 					groves, traditional temples, and scenic beauty. Immerse yourself in the tranquility and
 					charm of this iconic neighborhood.
 				</p>
-				<a href="#!" class="tour__more">VIEW NEIGHBORHOOD</a>
+				<a href="/" class="tour__more">VIEW NEIGHBORHOOD</a>
 			</div>
 			<div class="tour__pic tour__pic_mob-first">
 				<img
@@ -76,8 +76,8 @@
 
 		&__title {
 			font-weight: 500;
-			font-size: 30px;
-			line-height: 40px;
+			font-size: 2rem;
+			line-height: 2.5rem;
 			margin-bottom: 85px;
 			@media screen and (max-width: 960px) {
 				margin-bottom: 15px;
@@ -85,8 +85,8 @@
 		}
 
 		&__desc {
-			font-size: 16px;
-			line-height: 24px;
+			font-size: 1rem;
+			line-height: 1.5rem;
 			margin-bottom: 58px;
 			@media screen and (max-width: 960px) {
 				margin-bottom: 15px;
@@ -94,7 +94,7 @@
 		}
 
 		&__more {
-			font-size: 16px;
+			font-size: 1rem;
 			color: hsl(var(--color-theme-blue));
 			text-decoration: none;
 			padding-right: 59px;

@@ -5,11 +5,11 @@
 	import Tours from '$components/Tours.svelte';
 	import Locations from '$components/Locations.svelte';
 	import Videos from '$components/Videos.svelte';
+	import Testimonials from '$components/Testimonials.svelte';
 </script>
 
 <svelte:head>
 	<title>Odigo</title>
-	<link rel="icon" type="image/svg+xml" href="/odigo-logo.svg" />
 	<meta name="description" content="Discover Amazing places in Japan" />
 </svelte:head>
 
@@ -19,6 +19,7 @@
 <Tours></Tours>
 <Locations></Locations>
 <Videos></Videos>
+<Testimonials></Testimonials>
 
 <style>
 </style>

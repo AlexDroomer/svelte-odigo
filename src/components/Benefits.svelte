@@ -22,7 +22,7 @@
 					have access to a vast collection of travel information, itineraries, and insider tips to
 					make your journey unforgettable.
 				</p>
-				<a href="!#" class="benefits__card-more">Learn more about Odigo</a>
+				<a href="/" class="benefits__card-more">Learn more about Odigo</a>
 			</div>
 			<div class="benefits__card">
 				<div class="benefits__card-pic">
@@ -42,7 +42,7 @@
 					gems, find the best local spots, and immerse yourself in the authentic culture of this
 					enchanting country.
 				</p>
-				<a href="!#" class="benefits__card-more">Read guide about Japan</a>
+				<a href="/" class="benefits__card-more">Read guide about Japan</a>
 			</div>
 			<div class="benefits__card">
 				<div class="benefits__card-pic">
@@ -61,7 +61,7 @@
 					experiences, support local artisans, and contribute to the sustainable growth of Japan's
 					vibrant towns and cities.
 				</p>
-				<a href="!#" class="benefits__card-more">See Businesses</a>
+				<a href="/" class="benefits__card-more">See Businesses</a>
 			</div>
 		</div>
 	</div>
@@ -69,16 +69,16 @@
 
 <style lang="scss">
 	.benefits {
-		margin-bottom: 131px;
+		margin-bottom: 120px;
 		@media screen and (max-width: 767px) {
 			margin-bottom: 36px;
 		}
 
 		&__wrap {
 			max-width: 1268px;
-			background-color: #fff;
+			background-color: hsl(var(--color-theme-white));
 			margin: 0 auto;
-			box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+			box-shadow: 0px 2px 20px hsl(var(--color-theme-blue) / 0.16);
 			position: relative;
 			@media screen and (max-width: 960px) {
 				box-shadow: none;
@@ -87,14 +87,14 @@
 
 		&__title {
 			font-weight: 500;
-			font-size: 35px;
-			line-height: 42px;
-			color: #102746;
-			padding: 93px 100px 0 100px;
+			font-size: 2rem;
+			line-height: 2.5rem;
+			color: hsl(var(--color-theme-darkblue));
+			padding: 96px 100px 0 100px;
 			transform: translateY(-66%);
 			background-color: white;
 			@media screen and (max-width: 960px) {
-				padding: 55px 0 0 15px;
+				padding: 48px 0 0 16px;
 				margin: 0;
 				transform: translateY(-50%);
 			}
@@ -103,11 +103,11 @@
 		&__cards {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			column-gap: 55px;
+			column-gap: 3rem;
 			padding: 0px 100px;
 			@media screen and (max-width: 960px) {
-				padding: 0 15px;
-				column-gap: 35px;
+				padding: 0 16px;
+				column-gap: 2rem;
 			}
 		}
 
@@ -138,23 +138,19 @@
 			}
 			&-title {
 				font-weight: 500;
-				font-size: 18px;
-				line-height: 24px;
+				font-size: 1.125rem;
+				line-height: 1.5rem;
 				margin: 0;
-				@media screen and (max-width: 767px) {
-				}
 			}
 			&-desc {
-				font-size: 16px;
-				line-height: 1.5;
-				@media screen and (max-width: 767px) {
-				}
+				font-size: 1rem;
+				line-height: 1.5rem;
 			}
 			&-more {
 				display: inline-block;
-				padding-right: 59px;
-				font-size: 16px;
-				line-height: 24px;
+				padding-right: 60px;
+				font-size: 1rem;
+				line-height: 1.5rem;
 				color: hsl(var(--color-theme-blue));
 				text-decoration: none;
 				background: url(/arrow-right-icon.svg) no-repeat 95% center;
