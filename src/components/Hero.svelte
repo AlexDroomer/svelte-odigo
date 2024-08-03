@@ -28,8 +28,6 @@
 
 <section
 	class="hero"
-	style="background-image: url('/intro-bg-min.jpg');
-"
 >
 	<div class="wrapper">
 		<h1 class="hero__title">Discover Amazing places in Japan</h1>
@@ -46,7 +44,6 @@
 			<fieldset class="search-form__wrap">
 				<div class="search-form__info">
 					<input
-						style="background-image: url({base}/circle-icon.svg);"
 						type="text"
 						name="user-like-to-do"
 						bind:value={userAction}
@@ -54,7 +51,6 @@
 						placeholder="What would you like to do?"
 					/>
 					<input
-						style="background-image: url({base}/circle-icon.svg);"
 						type="text"
 						name="user-like-to-go"
 						bind:value={userPlace}
@@ -90,6 +86,7 @@
 <style lang="scss">
 	.hero {
 		min-height: 65vh;
+		background-image: url(/intro-bg-min.jpg);
 		background-size: cover;
 		padding-top: 264px;
 		padding-bottom: 248px;
@@ -184,6 +181,7 @@
 		&__field {
 			flex: 1 1 auto;
 			background: transparent no-repeat left 18px;
+			background-image: url(/circle-icon.svg);
 			background-size: 20px;
 			border: 0;
 			border-bottom: 2px solid hsl(var(--color-theme-blue));
@@ -207,7 +205,7 @@
 				margin-right: 0;
 				width: 100%;
 				padding-bottom: 12px;
-				background: transparent url({base}/circle-icon.svg) no-repeat left 18px;
+				background: transparent url(/circle-icon.svg) no-repeat left 18px;
 			}
 
 			&::placeholder {

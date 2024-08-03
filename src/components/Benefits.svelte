@@ -154,12 +154,12 @@
 				line-height: 1.5rem;
 				color: hsl(var(--color-theme-blue));
 				text-decoration: none;
-				background: url({base}/arrow-right-icon.svg) no-repeat 95% center;
+				background: url(/arrow-right-icon.svg) no-repeat 95% center;
 				transition: 0.2s all;
 
 				&:hover,
 				&:focus {
-					background: url({base}/arrow-right-icon.svg) no-repeat right center;
+					background: url(/arrow-right-icon.svg) no-repeat right center;
 				}
 			}
 		}
