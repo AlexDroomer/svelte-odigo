@@ -152,6 +152,16 @@ button:focus:not(:focus-visible) {
 	}
 }
 
+@keyframes spin {
+	to {
+		transform: rotate(1turn);
+	}
+}
+
+.animate-spin {
+	animation: spin 1s linear infinite;
+}
+
 .fadeInLeft {
 	animation-name: fadeInLeft;
 }
