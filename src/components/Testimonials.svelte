@@ -7,24 +7,22 @@
 		<div class="testimonials__slider">
 			<div class="testimonial">
 				<p class="testimonial__quote">
-					"Odigo is an invaluable resource for anyone planning a trip to Japan. It's like having a
-					knowledgeable local friend to guide you through the best places to visit, eat, and
-					experience."
+					"Odigo is an invaluable resource for anyone planning a trip to Japan. It's like having a knowledgeable local
+					friend to guide you through the best places to visit, eat, and experience."
 				</p>
 				<p class="testimonial__author">- Emily, California</p>
 			</div>
 			<div class="testimonial">
 				<p class="testimonial__quote">
-					"I discovered hidden gems in Japan through Odigo's travel guides and user recommendations.
-					It made my trip truly special and allowed me to explore beyond the typical tourist spots."
+					"I discovered hidden gems in Japan through Odigo's travel guides and user recommendations. It made my trip
+					truly special and allowed me to explore beyond the typical tourist spots."
 				</p>
 				<p class="testimonial__author">- David, Australia</p>
 			</div>
 			<div class="testimonial">
 				<p class="testimonial__quote">
-					"As a solo traveler, Odigo gave me the confidence to explore Japan at my own pace. I met
-					amazing people and had unforgettable experiences, all thanks to the insights shared by the
-					Odigo community."
+					"As a solo traveler, Odigo gave me the confidence to explore Japan at my own pace. I met amazing people and
+					had unforgettable experiences, all thanks to the insights shared by the Odigo community."
 				</p>
 				<p class="testimonial__author">- Sarah, United Kingdom</p>
 			</div>

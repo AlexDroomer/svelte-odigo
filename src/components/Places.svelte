@@ -23,23 +23,13 @@
 			<figure class="places__card places__card_size_lg">
 				<figcaption class="places__card-title">Kyoto</figcaption>
 
-				<img
-					src="{base}/kyoto-min.jpg"
-					alt="Kyoto"
-					class="places__card-pic places__card-pic_size_lg"
-					loading="lazy"
-				/>
+				<img src="{base}/kyoto-min.jpg" alt="Kyoto" class="places__card-pic places__card-pic_size_lg" loading="lazy" />
 				<a href="{base}/" aria-label="Kyoto" class="places__card-link"></a>
 			</figure>
 
 			<figure class="places__card places__card_size_sm">
 				<figcaption class="places__card-title">Tokyo</figcaption>
-				<img
-					src="{base}/tokyo-min.jpg"
-					alt="Tokyo"
-					class="places__card-pic places__card-pic_size_sm"
-					loading="lazy"
-				/>
+				<img src="{base}/tokyo-min.jpg" alt="Tokyo" class="places__card-pic places__card-pic_size_sm" loading="lazy" />
 				<a href="{base}/" aria-label="Tokyo" class="places__card-link"></a>
 			</figure>
 
@@ -117,12 +107,14 @@
 
 			&-title {
 				font-size: 3rem;
-				line-height: 3.5rem;
+				line-height: 1.5;
 				color: hsl(var(--color-theme-white));
 				position: absolute;
 				bottom: 27px;
 				left: 29px;
 				z-index: 3;
+				background-color: hsl(var(--color-theme-darkblue));
+				padding: 4px 16px;
 			}
 			&_size_lg {
 				grid-column: span 3;

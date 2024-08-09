@@ -35,12 +35,7 @@
 <svelte:window bind:scrollY={y} />
 <header class="header" class:open={y > 85}>
 	<div class="wrapper">
-		<a
-			data-sveltekit-prefetch
-			href="{base}/"
-			aria-label="Odigo Home Page"
-			class="header__logo-link"
-		>
+		<a data-sveltekit-prefetch href="{base}/" aria-label="Odigo Home Page" class="header__logo-link">
 			<Icons type="logo"></Icons>
 		</a>
 		<nav class="header__nav" class:open={menuOpen} aria-label="Site Navigation">
@@ -76,32 +71,17 @@
 						id="mobile-menu"
 						aria-label="Site navigation links"
 					>
-						<li
-							class="header__item"
-							aria-current={$page.url.hash === '#tours' ? 'page' : undefined}
-						>
+						<li class="header__item" aria-current={$page.url.hash === '#tours' ? 'page' : undefined}>
 							<a class="header__link" href="{base}/#tours" on:click={handleSmoothScroll}>tours</a>
 						</li>
-						<li
-							class="header__item"
-							aria-current={$page.url.hash === '#locations' ? 'page' : undefined}
-						>
-							<a class="header__link" href="{base}/#locations" on:click={handleSmoothScroll}
-								>locations</a
-							>
+						<li class="header__item" aria-current={$page.url.hash === '#locations' ? 'page' : undefined}>
+							<a class="header__link" href="{base}/#locations" on:click={handleSmoothScroll}>locations</a>
 						</li>
-						<li
-							class="header__item"
-							aria-current={$page.url.hash === '#videos' ? 'page' : undefined}
-						>
+						<li class="header__item" aria-current={$page.url.hash === '#videos' ? 'page' : undefined}>
 							<a class="header__link" href="{base}/#videos" on:click={handleSmoothScroll}>videos</a>
 						</li>
-						<li
-							class="header__item"
-							aria-current={$page.url.pathname === '/sign-in' ? 'page' : undefined}
-						>
-							<a class="header__link" href="{base}/sign-in" on:click={handleSmoothScroll}>sign in</a
-							>
+						<li class="header__item" aria-current={$page.url.pathname === '/sign-in' ? 'page' : undefined}>
+							<a class="header__link" href="{base}/sign-in" on:click={handleSmoothScroll}>sign in</a>
 						</li>
 					</ul>
 				</div>
@@ -115,19 +95,13 @@
 				<li class="header__item" aria-current={$page.url.hash === '#tours' ? 'page' : undefined}>
 					<a class="header__link" href="{base}/#tours">tours</a>
 				</li>
-				<li
-					class="header__item"
-					aria-current={$page.url.hash === '#locations' ? 'page' : undefined}
-				>
+				<li class="header__item" aria-current={$page.url.hash === '#locations' ? 'page' : undefined}>
 					<a class="header__link" href="{base}/#locations">locations</a>
 				</li>
 				<li class="header__item" aria-current={$page.url.hash === '#videos' ? 'page' : undefined}>
 					<a class="header__link" href="{base}/#videos">videos</a>
 				</li>
-				<li
-					class="header__item"
-					aria-current={$page.url.pathname === '/sign-in' ? 'page' : undefined}
-				>
+				<li class="header__item" aria-current={$page.url.pathname === '/sign-in' ? 'page' : undefined}>
 					<a class="header__link" href="{base}/sign-in">sign in</a>
 				</li>
 			</ul>
@@ -141,19 +115,27 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		transition: background-color 0.3s;
+		transition: all 0.3s;
 		z-index: 20;
 
 		.wrapper {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			padding-top: 2rem;
+			padding-top: 1rem;
 			padding-bottom: 1rem;
 		}
 
 		&.open {
 			background: hsl(var(--color-theme-darkblue));
+			top: auto;
+			bottom: 0;
+		}
+
+		&__logo-link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 		&__list {

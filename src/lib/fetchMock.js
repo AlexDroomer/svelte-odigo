@@ -10,14 +10,11 @@
 export const fetchMock = (url, options) => {
 	return new Promise((resolve) => {
 		setTimeout(() => {
-			if (
-				options.body.get('email') === 'nanashi@nogonbei.jp' &&
-				options.body.get('password') === 'password'
-			) {
+			if (options.body.get('email') === 'nanashi@nogonbei.jp' && options.body.get('password') === 'password') {
 				resolve({
 					ok: true,
 					status: 200,
-					json: () => Promise.resolve({message: 'Login successful' })
+					json: () => Promise.resolve({ message: 'Login successful' })
 				});
 			} else {
 				resolve({

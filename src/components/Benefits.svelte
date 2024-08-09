@@ -19,9 +19,8 @@
 				</div>
 				<h3 class="benefits__card-title">Welcome to Odigo!</h3>
 				<p class="benefits__card-desc">
-					Welcome to Odigo, your personal guide to exploring the wonders of Japan. With us, you'll
-					have access to a vast collection of travel information, itineraries, and insider tips to
-					make your journey unforgettable.
+					Welcome to Odigo, your personal guide to exploring the wonders of Japan. With us, you'll have access to a vast
+					collection of travel information, itineraries, and insider tips to make your journey unforgettable.
 				</p>
 				<a href="{base}/" class="benefits__card-more">Learn more about Odigo</a>
 			</div>
@@ -39,9 +38,8 @@
 				<h3 class="benefits__card-title">Your Personal Japan Guide</h3>
 
 				<p class="benefits__card-desc">
-					With Odigo, you have a personalized Japan guide at your fingertips. Explore the hidden
-					gems, find the best local spots, and immerse yourself in the authentic culture of this
-					enchanting country.
+					With Odigo, you have a personalized Japan guide at your fingertips. Explore the hidden gems, find the best
+					local spots, and immerse yourself in the authentic culture of this enchanting country.
 				</p>
 				<a href="{base}/" class="benefits__card-more">Read guide about Japan</a>
 			</div>
@@ -58,9 +56,8 @@
 				</div>
 				<h3 class="benefits__card-title">Promoting Local Businesses</h3>
 				<p class="benefits__card-desc">
-					At Odigo, we believe in supporting local businesses and communities. Discover authentic
-					experiences, support local artisans, and contribute to the sustainable growth of Japan's
-					vibrant towns and cities.
+					At Odigo, we believe in supporting local businesses and communities. Discover authentic experiences, support
+					local artisans, and contribute to the sustainable growth of Japan's vibrant towns and cities.
 				</p>
 				<a href="{base}/" class="benefits__card-more">See Businesses</a>
 			</div>

@@ -6,19 +6,13 @@
 	<div class="wrapper-full">
 		<div class="tours__tour tour">
 			<div class="tour__pic">
-				<img
-					src="{base}/tour-1-min.jpg"
-					alt="Prefecture in Focus: Tottori"
-					class="tour__thumb"
-					loading="lazy"
-				/>
+				<img src="{base}/tour-1-min.jpg" alt="Prefecture in Focus: Tottori" class="tour__thumb" loading="lazy" />
 			</div>
 			<div class="tour__info">
 				<h3 class="tour__title">Prefecture in Focus: Tottori</h3>
 				<p class="tour__desc">
-					Dive deep into the enchanting beauty of Tottori Prefecture, where you'll find pristine
-					sand dunes, captivating landscapes, and a rich cultural heritage. Experience the essence
-					of Japan in this picturesque region.
+					Dive deep into the enchanting beauty of Tottori Prefecture, where you'll find pristine sand dunes, captivating
+					landscapes, and a rich cultural heritage. Experience the essence of Japan in this picturesque region.
 				</p>
 				<a href="{base}/" class="tour__more">VIEW PREFECTURE</a>
 			</div>
@@ -27,9 +21,8 @@
 			<div class="tour__info">
 				<h3 class="tour__title">Featured Neighborhood: Kyoto’s Arashiyama</h3>
 				<p class="tour__desc">
-					Discover the timeless allure of Arashiyama in Kyoto, a district renowned for its bamboo
-					groves, traditional temples, and scenic beauty. Immerse yourself in the tranquility and
-					charm of this iconic neighborhood.
+					Discover the timeless allure of Arashiyama in Kyoto, a district renowned for its bamboo groves, traditional
+					temples, and scenic beauty. Immerse yourself in the tranquility and charm of this iconic neighborhood.
 				</p>
 				<a href="{base}/" class="tour__more">VIEW NEIGHBORHOOD</a>
 			</div>

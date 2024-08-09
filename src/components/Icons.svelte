@@ -4,25 +4,11 @@
 </script>
 
 {#if type === 'arrowRight'}
-	<svg
-		class={className}
-		width="33"
-		height="8"
-		viewBox="0 0 33 8"
-		fill="none"
-		xmlns="http://www.w3.org/2000/svg"
-	>
+	<svg class={className} width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M24.7706 3H0V5H24.7706V8L33 4L24.7706 0V3Z" fill="#006DFE" />
 	</svg>
 {:else if type === 'circle'}
-	<svg
-		class={className}
-		width="20"
-		height="20"
-		viewBox="0 0 20 20"
-		fill="none"
-		xmlns="http://www.w3.org/2000/svg"
-	>
+	<svg class={className} width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path
 			d="M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
 			stroke="white"
@@ -30,14 +16,8 @@
 		/>
 	</svg>
 {:else if type === 'comment'}
-	<svg
-		class={className}
-		width="14"
-		height="14"
-		viewBox="0 0 14 14"
-		fill="none"
-		xmlns="http://www.w3.org/2000/svg"
-	>
+	<svg class={className} width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<title>Comment</title>
 		<path
 			fill-rule="evenodd"
 			clip-rule="evenodd"
@@ -46,28 +26,16 @@
 		/>
 	</svg>
 {:else if type === 'heart'}
-	<svg
-		class={className}
-		width="16"
-		height="15"
-		viewBox="0 0 16 15"
-		fill="none"
-		xmlns="http://www.w3.org/2000/svg"
-	>
+	<svg class={className} width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<title>Like</title>
 		<path
 			d="M8 15L6.84 13.921C2.72 10.1035 0 7.58583 0 4.49591C0 1.9782 1.936 0 4.4 0C5.792 0 7.128 0.662125 8 1.70845C8.872 0.662125 10.208 0 11.6 0C14.064 0 16 1.9782 16 4.49591C16 7.58583 13.28 10.1035 9.16 13.9292L8 15Z"
 			fill="white"
 		/>
 	</svg>
 {:else if type === 'logo'}
-	<svg
-		class={className}
-		width="82"
-		height="31"
-		viewBox="0 0 82 31"
-		fill="none"
-		xmlns="http://www.w3.org/2000/svg"
-	>
+	<svg class={className} width="82" height="31" viewBox="0 0 82 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<title>Odigo</title>
 		<path
 			fill-rule="evenodd"
 			clip-rule="evenodd"
@@ -88,14 +56,8 @@
 		/>
 	</svg>
 {:else if type === 'logoFooter'}
-	<svg
-		class={className}
-		width="170"
-		height="64"
-		viewBox="0 0 170 64"
-		fill="none"
-		xmlns="http://www.w3.org/2000/svg"
-	>
+	<svg class={className} width="170" height="64" viewBox="0 0 170 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<title>Odigo</title>
 		<path
 			fill-rule="evenodd"
 			clip-rule="evenodd"

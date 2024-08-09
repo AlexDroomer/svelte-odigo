@@ -1,5 +1,5 @@
 <script>
-	import { base } from "$app/paths";
+	import { base } from '$app/paths';
 
 	let userAction = '';
 	let userPlace = '';
@@ -26,46 +26,49 @@
 	}
 </script>
 
-<section
-	class="hero"
->
+<section class="hero">
 	<div class="wrapper">
 		<h1 class="hero__title">Discover Amazing places in Japan</h1>
 		<p class="hero__subtitle">
-			Welcome to the beautiful land of Japan, a country known for its stunning natural landscapes,
-			rich cultural heritage, and vibrant cities. Whether you seek the serene beauty of Mount Fuji,
-			the historical charm of Kyoto, the bustling streets of Tokyo, or the scenic beauty of Niigata
-			and Sapporo, Japan has something to offer for every traveler.
+			Welcome to the beautiful land of Japan, a country known for its stunning natural landscapes, rich cultural
+			heritage, and vibrant cities. Whether you seek the serene beauty of Mount Fuji, the historical charm of Kyoto, the
+			bustling streets of Tokyo, or the scenic beauty of Niigata and Sapporo, Japan has something to offer for every
+			traveler.
 		</p>
-		<form
-			on:submit|preventDefault={(event) => sendRequest(event.currentTarget)}
-			class="search-form"
-		>
+		<form on:submit|preventDefault={(event) => sendRequest(event.currentTarget)} class="search-form">
 			<fieldset class="search-form__wrap">
+				<legend class="search-form__legend">Describe your dream</legend>
 				<div class="search-form__info">
-					<input
-						type="text"
-						name="user-like-to-do"
-						bind:value={userAction}
-						class="search-form__field"
-						placeholder="What would you like to do?"
-					/>
-					<input
-						type="text"
-						name="user-like-to-go"
-						bind:value={userPlace}
-						class="search-form__field"
-						placeholder="Where would you like to go?"
-					/>
-					<button id="sendRequest" on:click={openModal} type="submit" class="search-form__submit">
-						Find places
-					</button>
+					<label class="search-form__label" for="user-like-to-do"
+						><span>What would you like to do?</span>
+						<input
+							type="text"
+							name="user-like-to-do"
+							id="user-like-to-do"
+							bind:value={userAction}
+							class="search-form__field"
+							placeholder="Haiking, Cycling, Walking"
+						/>
+					</label>
+					<label class="search-form__label" for="user-like-to-go">
+						<span>Where would you like to go?</span>
+						<input
+							type="text"
+							name="user-like-to-go"
+							id="user-like-to-go"
+							bind:value={userPlace}
+							class="search-form__field"
+							placeholder="Sapporo, Kyoto"
+						/>
+					</label>
+					<button id="sendRequest" on:click={openModal} type="submit" class="search-form__submit"> Find places </button>
 				</div>
 			</fieldset>
 		</form>
 	</div>
 	<dialog id="sendRequestDialog">
 		<section>
+			<span>this was added for the purpose of studying the accessibility of the dialog</span>
 			<p>
 				You like to go:
 				<span>{userPlace}</span>
@@ -76,9 +79,7 @@
 			</p>
 		</section>
 		<menu>
-			<button type="button" aria-label="Close modal" id="close" on:click={closeModal}>
-				Got it!
-			</button>
+			<button type="button" aria-label="Close modal" id="close" on:click={closeModal}> Got it! </button>
 		</menu>
 	</dialog>
 </section>
@@ -86,7 +87,7 @@
 <style lang="scss">
 	.hero {
 		min-height: 65vh;
-		background-image: url(/intro-bg-min.jpg);
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(/intro-bg-min.jpg);
 		background-size: cover;
 		padding-top: 264px;
 		padding-bottom: 248px;
@@ -138,6 +139,7 @@
 
 		&:not([open]) {
 			pointer-events: none;
+			visibility: hidden;
 			opacity: 0;
 		}
 
@@ -168,6 +170,19 @@
 			border: none;
 			margin: 0;
 			padding: 0;
+		}
+		&__legend {
+			color: hsl(var(--color-theme-white));
+			font-weight: 500;
+			font-size: 1.25rem;
+			margin-bottom: 8px;
+		}
+
+		&__label {
+			display: flex;
+			flex-direction: column;
+			font-size: 0.875rem;
+			color: hsl(var(--color-theme-white));
 		}
 		&__info {
 			display: flex;

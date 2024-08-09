@@ -23,9 +23,8 @@
 					</div>
 				</div>
 				<p class="top__card-desc">
-					Explore the vibrant city of Nagoya, where tradition and modernity blend seamlessly. From
-					ancient castles to futuristic attractions, Nagoya offers an unforgettable experience for
-					every traveler.
+					Explore the vibrant city of Nagoya, where tradition and modernity blend seamlessly. From ancient castles to
+					futuristic attractions, Nagoya offers an unforgettable experience for every traveler.
 				</p>
 				<a href="{base}/" class="top__card-more">SEE MORE</a>
 			</div>
@@ -46,9 +45,8 @@
 					</div>
 				</div>
 				<p class="top__card-desc">
-					Embark on a journey to Niigata, where you can experience the beauty of the Japanese
-					countryside, taste exceptional sake, and immerse yourself in the warmth of the local
-					hospitality.
+					Embark on a journey to Niigata, where you can experience the beauty of the Japanese countryside, taste
+					exceptional sake, and immerse yourself in the warmth of the local hospitality.
 				</p>
 				<a href="{base}/" class="top__card-more">SEE MORE</a>
 			</div>
@@ -68,9 +66,8 @@
 					</div>
 				</div>
 				<p class="top__card-desc">
-					Experience the energetic spirit of Osaka, a city brimming with culinary delights, historic
-					landmarks, and modern entertainment. Unravel the multifaceted charm of Japan's kitchen and
-					entertainment capital.
+					Experience the energetic spirit of Osaka, a city brimming with culinary delights, historic landmarks, and
+					modern entertainment. Unravel the multifaceted charm of Japan's kitchen and entertainment capital.
 				</p>
 				<a href="{base}/" class="top__card-more">SEE MORE</a>
 			</div>
@@ -91,9 +88,8 @@
 					</div>
 				</div>
 				<p class="top__card-desc">
-					Delve into the lesser-known wonders of Saitama, an area filled with hidden gems, serene
-					parks, and cultural treasures. Discover the perfect blend of nature and urban charm in
-					this fascinating region.
+					Delve into the lesser-known wonders of Saitama, an area filled with hidden gems, serene parks, and cultural
+					treasures. Discover the perfect blend of nature and urban charm in this fascinating region.
 				</p>
 				<a href="{base}/" class="top__card-more">SEE MORE</a>
 			</div>
@@ -113,9 +109,9 @@
 					</div>
 				</div>
 				<p class="top__card-desc">
-					Immerse yourself in the cultural heart of Tokyo at Ueno, a district celebrated for its
-					museums, cherry blossoms, and vibrant atmosphere. Discover the rich history and
-					contemporary allure of this captivating neighborhood.
+					Immerse yourself in the cultural heart of Tokyo at Ueno, a district celebrated for its museums, cherry
+					blossoms, and vibrant atmosphere. Discover the rich history and contemporary allure of this captivating
+					neighborhood.
 				</p>
 				<a href="{base}/" class="top__card-more">SEE MORE</a>
 			</div>
@@ -136,9 +132,9 @@
 					</div>
 				</div>
 				<p class="top__card-desc">
-					Immerse yourself in the dynamic energy of Shibuya, Tokyo's iconic fashion and
-					entertainment hub. Explore trendy shops, indulge in delectable cuisine, and experience the
-					vibrant street culture of this bustling district.
+					Immerse yourself in the dynamic energy of Shibuya, Tokyo's iconic fashion and entertainment hub. Explore
+					trendy shops, indulge in delectable cuisine, and experience the vibrant street culture of this bustling
+					district.
 				</p>
 				<a href="{base}/" class="top__card-more">SEE MORE</a>
 			</div>
