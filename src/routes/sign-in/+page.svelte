@@ -28,7 +28,7 @@
 			const data = await response.json();
 			errorMessage = '';
 			const sessionId = nanoid();
-			document.cookie = `sessionid=${sessionId}; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax;`;
+			document.cookie = `sessionid=${sessionId}; httpOnly; Secure; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax;`;
 			localStorage.setItem('user', email);
 			user.set(email);
 		} else {

@@ -12,7 +12,8 @@
 						width="40"
 						height="40"
 						src="{base}/church-icon.png"
-						alt="Welcome to Odigo!"
+						alt=""
+						aria-hidden="true"
 						class="benefits__card-thumb"
 						loading="lazy"
 					/>
@@ -30,7 +31,8 @@
 						src="{base}/person-icon.png"
 						width="40"
 						height="40"
-						alt="Your Personal Japan Guide"
+						alt=""
+						aria-hidden="true"
 						class="benefits__card-thumb"
 						loading="lazy"
 					/>
@@ -49,7 +51,8 @@
 						src="{base}/building-icon.png"
 						width="40"
 						height="40"
-						alt="Promoting Local Businesses"
+						alt=""
+						aria-hidden="true"
 						class="benefits__card-thumb"
 						loading="lazy"
 					/>
